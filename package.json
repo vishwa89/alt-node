@@ -1,0 +1,26 @@
+{
+  "name": "PTV",
+  "version": "0.0.0",
+  "description": "Propeller TV",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MEAN"
+  ],
+  "dependencies": {
+    "express": "3.4.0",
+    "jade": "*",
+    "stylus": "*",
+    "mongoose": "3.6.19",
+    "passport": "0.1.17",
+    "passport-local": "0.1.6",
+    "connect-flash": "0.1.1",
+    "bcrypt-nodejs": "*",
+    "socket.io": "0.9.6",
+    "connect": "~2.15.0"
+  },
+  "author": "Boringtao",
+  "license": "BSD-2-Clause"
+}
