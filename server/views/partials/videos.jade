@@ -1,0 +1,3 @@
+h1 Videos
+ul(ng-repeat="video in videos | orderBy: 'published' : reverse=true | filter:{featured:true}")
+	li {{video.name}} - {{video.published | date: 'MMM d'}}
