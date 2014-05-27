@@ -1,5 +1,6 @@
 var express = require('express');
 var stylus = require('stylus');
+var passport = require('passport');
 
 module.exports = function(app, config) {
 	console.log(config.rootPath);
@@ -28,6 +29,11 @@ module.exports = function(app, config) {
 		  	src: config.rootPath + '/public', 
 		  	compile: compile
 		}));
+
+		// passport
+		app.use(express.session({secret: 'boringtao'}));
+		app.use(passport.initialize());
+		app.use(passport.session());
 	});
 
 	if ('development' == app.get('env')) {
