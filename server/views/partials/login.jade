@@ -1,7 +1,19 @@
 .login(ng-controller="loginCtrl")
 	form(ng-hide="identity.isAuthenticated()")
+		ul
+			li
+				a(href="/signup") Sign up
 		.form-group
-			input.form-control(placeholder="Email" ng-model="email")
+			input.form-control(type="email" placeholder="Email" ng-model="email")
 		.form-group
 			input.form-control(type="password" placeholder="Password" ng-model="password")
 		button(ng-click="login(email, password)") Log in
+	ul(ng-show="identity.isAuthenticated()")
+		li {{identity.currentUser.username}}
+			ul
+				li(ng-show="identity.currentUser.isAdmin()")
+					a(href="/admin/users") User Admin
+				li
+					a(href="/profile") Profile
+				li 
+					a(href="#", ng-click="logout()") Log Out

@@ -1,2 +1,16 @@
-h2 {{welcome}}
-div(ng-include="'/partials/login.jade'")
+img(ng-src="{{site.logo}}")
+h2 {{site.name}}
+p {{site.description}}
+.products(ng-controller="productsCtrl")
+	- var sortOptions = [{value: "-id", text: "Most recent"}, {value: "-likeCount", text: "Most liked"}, {value: "-price", text: "Price high"}, {value: "price", text: "Price low"}]
+	each val in sortOptions
+		input(ng-model="sortOrder" type="radio" name="sortOrder" value="#{val.value}")
+		span #{val.text}
+	ul
+		li(ng-repeat="product in products | orderBy: sortOrder") 
+			img(ng-src="{{product.image}}")
+			div {{product.name}}
+			div {{product.price | currency: "£"}}
+			div 
+				a(href="#" ng-click="likeEvent(product)") Like
+				span  {{product.likeCount}}

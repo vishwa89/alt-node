@@ -1,10 +1,10 @@
 {
-  "name": "PTV",
+  "name": "ALT",
   "version": "0.0.0",
   "authors": [
     "Boringtao"
   ],
-  "description": "Propeller TV",
+  "description": "ALT",
   "license": "MIT",
   "private": true,
   "dependencies": {

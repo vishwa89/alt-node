@@ -20,7 +20,7 @@ module.exports = function(app, config) {
 		app.use(express.bodyParser());
 		app.use(express.methodOverride());
 		app.use(function (req, res, next) {
-			res.set('X-Powered-By', 'Propeller TV');
+			res.set('X-Powered-By', 'ALT');
 			next();
 		});
 
@@ -31,7 +31,7 @@ module.exports = function(app, config) {
 		}));
 
 		// passport
-		app.use(express.session({secret: 'boringtao'}));
+		app.use(express.session({secret: 'alt'}));
 		app.use(passport.initialize());
 		app.use(passport.session());
 	});

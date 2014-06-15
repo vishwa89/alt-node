@@ -1,0 +1,22 @@
+.signup(ng-controller="signupCtrl")
+	form(name="signupForm")
+		h2 New User Information
+		.form-group
+			label.control-label(for="username") User Name
+			input.form-control(name="username", type="text", placeholder="User Name", ng-model="username", required)
+		.form-group
+			label.control-label(for="email") Email
+			input.form-control(name="email", type="email", placeholder="Email", ng-model="email", required)
+		.form-group
+			label.control-label(for="password") Password
+			input.form-control(name="password", type="password", placeholder="Password", ng-model="password", required)
+
+		.form-group
+			button(ng-click="signup()", ng-disabled="signupForm.$invalid") Submit
+			a(href="/") Cancel
+div
+	li
+		a(href="/videos") Videos
+div(ng-controller="videosCtrl")
+	ul(ng-repeat="video in videos")
+		li {{video.title}} - {{video.published | date: 'MMM d'}}

@@ -1,3 +1,12 @@
 h1 Videos
-ul(ng-repeat="video in videos | orderBy: 'published' : reverse=true | filter:{featured:true}")
-	li {{video.name}} - {{video.published | date: 'MMM d'}}
+div(ng-include="'/partials/login.jade'")
+div
+	li
+		a(href="/videos") Videos
+form.form-inline
+	.form-group
+		input.form-control(ng-model="searchText", placeholder="Filter")
+	.form-group.margin-left-med
+		select.form-control(ng-model="sortOrder", ng-options="item.value as item.text for item in sortOptions")
+ul(ng-repeat="video in videos | filter: searchText | orderBy: sortOrder")
+	li {{video.title}} - {{video.published | date: 'MMM d'}} - {{video._id}}
