@@ -1,18 +1,28 @@
 doctype html
 html(ng-app="alt")
-	head
-		meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
-		meta(http-equiv="X-UA-Compatible" content="IE=edge")
-		meta(charset="utf-8")
-		meta(name="apple-mobile-web-app-capable" content="yes")
-		meta(name="apple-mobile-web-app-status-bar-style" content="black")
-		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui")
-		meta(name="apple-mobile-web-app-title" content="Propeller TV")
-		title A lovely thing
-		link(rel="stylesheet", href="/vendor/toastr/toastr.css")
-	body
-		header 
-		section.content
-			div(ng-view)
-		footer 	
-		include scripts
+    head
+        meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(charset="utf-8")
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui")
+        meta(name="apple-mobile-web-app-title" content="Propeller TV")
+        title A lovely thing
+        link(href="http://fonts.googleapis.com/css?family=PT+Sans:700,400" rel="stylesheet" type="text/css")
+        link(rel='stylesheet' href='/vendor/bootstrap/dist/css/bootstrap.min.css')
+        link(rel='stylesheet' href='/css/standardize.css')
+        //- link(rel='stylesheet' href='css/global.css')
+        //- link(rel='stylesheet' href='css/layout.css')
+        //- link(rel='stylesheet' href='css/style.css')
+        //- link(rel='stylesheet' href='css/fonts.css')
+        //- link(rel='stylesheet' href='css/jquery.fancybox.css')
+        //- link(rel='stylesheet' href='css/fu.css')
+        //- link(rel='stylesheet' href='css/vish.css')
+    body
+        //- include navs/mobile-nav
+        //- include navs/top-nav
+        #main-wrapper
+          div(ng-view)
+        //- include navs/bottom-nav
+        include scripts

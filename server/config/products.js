@@ -1,7 +1,8 @@
-var Video = require('../data/video');
+var Product = require('mongoose').model('Product');
 
-exports.getVideos = function(req, res) {
-	Video.find({}).exec(function(err, videos) {
-		res.send(videos);
+exports.getProducts = function(req, res) {
+	Product.find({}).exec(function(err, products) {
+		res.send(products);
 	});
 };
+
