@@ -1,15 +1,16 @@
-.bottom-nav.clearfix
-    .pull-left.inline-block
+#bottom-nav
+  .row-fluid
+    .hidden-xs.hidden-sm.col-md-4.col-lg-4
         span.explore
-            a(href='#') explore
+            a(href='/') explore
         span.search
-            a(href='#') search
+            a(href='/search') search
         span.showroom
             a(href='#') showroom
-    .pull-center.inline-block
+    .hidden-xs.hidden-sm.col-md-4.col-lg-4
         span.signin
-            a(href='#') signin
-    .pull-right.inline-block
+            a(href='/signin') signin
+    .hidden-xs.hidden-sm.col-md-4.col-lg-4
         span.follow
             a(href='#') follow
         span.info

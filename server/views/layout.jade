@@ -11,7 +11,8 @@ html(ng-app="alt")
         title A lovely thing
         link(href="http://fonts.googleapis.com/css?family=PT+Sans:700,400" rel="stylesheet" type="text/css")
         link(rel='stylesheet' href='/vendor/bootstrap/dist/css/bootstrap.min.css')
-        link(rel='stylesheet' href='/css/standardize.css')
+        link(rel='stylesheet' href='/css/normalize.css')
+        link(rel='stylesheet' href='/css/signup.css')
         //- link(rel='stylesheet' href='css/global.css')
         //- link(rel='stylesheet' href='css/layout.css')
         //- link(rel='stylesheet' href='css/style.css')
@@ -20,9 +21,12 @@ html(ng-app="alt")
         //- link(rel='stylesheet' href='css/fu.css')
         //- link(rel='stylesheet' href='css/vish.css')
     body
-        //- include navs/mobile-nav
-        //- include navs/top-nav
-        #main-wrapper
+        header
+            //- .visible-xs.visible-sm.hidden-md.hidden-lg
+            //-     include navs/mobile-nav
+        section#main
           div(ng-view)
-        //- include navs/bottom-nav
+        footer
+            .hidden-xs.hidden-sm.visible-md.visible-lg
+                include navs/bottom-nav
         include scripts

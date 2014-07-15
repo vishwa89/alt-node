@@ -7,5 +7,5 @@ angular.module('alt')
 	.when('/', { templateUrl: '/pages/index'})
 	.when('/brand/products', { templateUrl: '/pages/brand-products' })
 	.when('/brand/trace', { templateUrl: '/pages/brand-products' })
-	.when('/brand/section/:section', { templateUrl: '/pages/brand-section' });
+	.when('/brand/chapter/:chapter', { templateUrl: '/pages/brand-chapter' });
 });

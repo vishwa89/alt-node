@@ -15,7 +15,7 @@ angular.module('alt')
 .controller('filterCtrl', function($scope, filterService) { 
     $scope.filterService = filterService;
 })
-.controller('brandSectionCtrl', function($scope, $routeParams) { 
-    $scope.section = $routeParams.section;
+.controller('brandChapterCtrl', function($scope, $routeParams) { 
+    $scope.chapter = $routeParams.chapter;
     console.log($scope.section);
 });

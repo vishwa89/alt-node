@@ -24,11 +24,12 @@ module.exports = function(app, config) {
 			next();
 		});
 
-		app.use(express.static(config.rootPath + '/public'));
+		
 		app.use(stylus.middleware({ 
 		  	src: config.rootPath + '/public', 
 		  	compile: compile
 		}));
+    app.use(express.static(config.rootPath + '/public'));
 
 		// passport
 		app.use(express.session({secret: 'alt'}));

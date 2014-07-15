@@ -1,29 +1,33 @@
-.filters(ng-controller="filterCtrl")
-  .gender.inline-block
-    form
-      - var filterGenderOptions = [{value: "man", text: "Man"}, {value: "woman", text: "Woman"}]
-      each val in filterGenderOptions
-        label
-          input(ng-model="filterService.activeFilters.gender" type="radio" name="filter" value="#{val.value}")
-          | #{val.text}
-  .type.inline-block
-    form
-     - var filterTypeOptions = [{value: "shoe", text: "Shoes"}, {value: "accessory", text: "Accessories"}, {value: "bag", text: "Bags"}, {value: "jewelly", text: "Jewelly"}, {value: "appeal", text: "Appeal"}, {value: "misc", text: "Other misc"}]
-      each val in filterTypeOptions
-        label
-          input(ng-model="filterService.activeFilters.type" type="radio" name="filter" value="#{val.value}")
-          | #{val.text}
-  .colour.inline-block
-    form
-      - var filterColourOptions = [{value: "blue", text: "Blue"}, {value: "black", text: "Black"}, {value: "green", text: "Green"}, {value: "red", text: "Red"}]
-      each val in filterColourOptions
-        label
-          input(ng-model="filterService.activeFilters.colour" type="radio" name="filter" value="#{val.value}")
-          | #{val.text}
-  .order.inline-block
-    form
-      - var sortOptions = [{value: "-id", text: "Most recent"}, {value: "-likeCount", text: "Most liked"}, {value: "-price", text: "Price high"}, {value: "price", text: "Price low"}, {value: "video", text: "Video"}, {value: "featured", text: "We recommend"}]
-      each val in sortOptions
-        label
-          input(ng-model="sort" type="radio" name="sort" value="#{val.value}")
-          | #{val.text}
+#filters
+  .row-fluid
+    .gender.col-lg-2.col-md-2.col-sm-2
+      form(ng-controller="filterCtrl")
+        - var filterGenderOptions = [{value: "man", text: "Man"}, {value: "woman", text: "Woman"}]
+        each val in filterGenderOptions
+          label
+            input(ng-model="filterService.activeFilters.gender" type="radio" name="filter" value="#{val.value}")
+            | #{val.text}
+    .type.col-lg-3.col-md-3.col-sm-3
+      form(ng-controller="filterCtrl")
+       - var filterTypeOptions = [{value: "shoe", text: "Shoes"}, {value: "accessory", text: "Accessories"}, {value: "bag", text: "Bags"}, {value: "jewelly", text: "Jewelly"}, {value: "appeal", text: "Appeal"}, {value: "misc", text: "Other misc"}]
+        each val in filterTypeOptions
+          label
+            input(ng-model="filterService.activeFilters.type" type="radio" name="filter" value="#{val.value}")
+            | #{val.text}
+    .colour.col-lg-2.col-md-2.col-sm-2
+      form(ng-controller="filterCtrl")
+        - var filterColourOptions = [{value: "blue", text: "Blue"}, {value: "black", text: "Black"}, {value: "green", text: "Green"}, {value: "red", text: "Red"}]
+        each val in filterColourOptions
+          label
+            input(ng-model="filterService.activeFilters.colour" type="radio" name="filter" value="#{val.value}")
+            | #{val.text}
+    .order.col-lg-3.col-md-3.col-sm-3
+      form
+        - var sortOptions = [{value: "-id", text: "Most recent"}, {value: "-likeCount", text: "Most liked"}, {value: "-price", text: "Price high"}, {value: "price", text: "Price low"}, {value: "video", text: "Video"}, {value: "featured", text: "We recommend"}]
+        each val in sortOptions
+          label
+            input(ng-model="sort" type="radio" name="sort" value="#{val.value}")
+            | #{val.text}
+    .misc.col-lg-2.col-md-2.col-sm-2
+      div Go explore
+      div My preference
