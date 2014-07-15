@@ -1,32 +1,37 @@
 #product-details
-  .col-xs-12.col-sm-12.col-md-8.col-lg-8
-  span.title
-    i From
-    a(href='#') byAMT
-  ul.social
-    li.followbtn
-      | Follow
-    li
-      a(href='#')
-        img(src='/images/shape-2.png')
-    li
-      a(href='#')
-        img(src='/images/fb.png')
-    li
-      a(href='#')
-        img(src='/images/twitter_2.png')
-    li
-      a(href='#') Share...
-  button.chat_btn Chat Online
-    #divider2.divider
-    .infowrapper.infowrapper2
-      .product_title(title='productname') Bubble Bracelet - clear acrylic 
-      .price(title='price') £12
-      div
+  .row
+    .col-xs-12.col-sm-12.col-md-8.col-lg-8
+      span.brand
+        i From
+        a(href='#') byAMT
+      ul.social
+        li.followbtn
+          | Follow
+        li
+          a(href='#')
+            img(src='/images/shape-2.png')
+        li
+          a(href='#')
+            img(src='/images/fb.png')
+        li
+          a(href='#')
+            img(src='/images/twitter_2.png')
+        li
+          a(href='#') Share...
+    .col-xs-12.col-sm-12.col-md-4.col-lg-4
+      button.chat_btn Chat Online
+  .details
+    .col-xs-12.col-sm-12.col-md-6.col-lg-6
+      .title 
+        | Bubble Bracelet - clear acrylic 
+      .price 
+        £12
+      .vat
         i VAT & Import duty incl.
-      ul.deliveryinfo
+    .col-xs-12.col-sm-12.col-md-6.col-lg-6
+      ul.delivery
         li Product code: 1234556
         li Delivery & Returns: £5 UK. £10 ROW. Free return in UK.
         li
-          img(src='images/QRcode.png')
-      #tabs
+          img(src='/images/QRcode.png')
+clearfix
