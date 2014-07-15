@@ -8,5 +8,6 @@ angular.module('alt')
 	.when('/brand/products-all', { templateUrl: '/pages/brand-products-all' })
 	.when('/brand/products-featured', { templateUrl: '/pages/brand-products-featured' })
 	.when('/brand/trace', { templateUrl: '/pages/brand-products-all' })
-	.when('/brand/chapter/:chapter', { templateUrl: '/pages/brand-chapter' });
+	.when('/brand/chapter/:chapter', { templateUrl: '/pages/brand-chapter' })
+	.when('/product', { templateUrl: '/pages/product' });
 });
