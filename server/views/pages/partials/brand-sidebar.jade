@@ -12,7 +12,7 @@
       img(src='/images/love-it.png')
   .brand-info
     | New York-based design studio byAMT creates jewelry, home goods, and furniture that tweak expectations and invite deli.visible-xs-inline-blockght.
-  .brand-menu
+  .brand-menu(ng-controller="brandChapterCtrl")
     ul
       li.visible-xs-inline-block.visible-sm-inline-block.visible-md-block.visible-lg-block
         a(href='/brand/products-all') Products
@@ -21,15 +21,7 @@
             a.all(href='products-all') All
           li
             a.featured(href='/brand/products-featured') Featured
-      li.visible-xs-inline-block.visible-sm-inline-block.visible-md-block.visible-lg-block
-        a(href='/brand/chapter/story') Story
-      li.visible-xs-inline-block.visible-sm-inline-block.visible-md-block.visible-lg-block
-        a(href='/brand/chapter/mood') Mood
-      li.visible-xs-inline-block.visible-sm-inline-block.visible-md-block.visible-lg-block
-        a(href='/brand/chapter/talk') Talk
-      li.visible-xs-inline-block.visible-sm-inline-block.visible-md-block.visible-lg-block
-        a(href='/brand/chapter/trip') Trip
-      li.visible-xs-inline-block.visible-sm-inline-block.visible-md-block.visible-lg-block
-        a(href='/brand/chapter/moment') Moment
-      li.visible-xs-inline-block.visible-sm-inline-block.visible-md-block.visible-lg-block
+      li.visible-xs-inline-block.visible-sm-inline-block.visible-md-block.visible-lg-block(ng-repeat="chapter in chapters" ng-class="navClass('{{chapter.name}}')")
+        a(href='/brand/chapter/{{chapter.name}}' style="text-transform: capitalize") {{chapter.name}}
+      li
         a(href='/brand/trace') Trace

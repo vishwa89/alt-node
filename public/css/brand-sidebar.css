@@ -1,0 +1,73 @@
+#brand-sidebar {
+  height: 100%;
+  background: #f6f6f6;
+  padding: 40px;
+  left: 0;
+  font-family: PT_Sans;
+  font-weight: bold;
+  color: #000;
+  position: fixed;
+  width: inherit;
+}
+#brand-sidebar .title {
+  font-size: 30px;
+  margin-top: 20%;
+  text-align: right;
+}
+#brand-sidebar .misc {
+  margin: 20px 0;
+}
+#brand-sidebar .misc a {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #929292;
+  text-decoration: none;
+}
+#brand-sidebar .misc a.follow {
+  padding: 7px 10px;
+  margin-left: 25%;
+  color: #000;
+  border: 1px solid #000;
+}
+#brand-sidebar .brand-info {
+  font-size: 14px;
+  padding: 20px 0;
+  font-weight: lighter;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  text-align: justify;
+}
+#brand-sidebar .brand-menu {
+  padding-top: 40px;
+}
+#brand-sidebar .brand-menu ul {
+  list-style-type: none;
+  text-align: right;
+}
+#brand-sidebar .brand-menu ul li {
+  padding: 8px 0;
+}
+#brand-sidebar .brand-menu ul li a {
+  color: #929292;
+  font-size: 22px;
+  font-weight: normal;
+  padding: 10px 0;
+  text-decoration: none;
+}
+#brand-sidebar .brand-menu ul li a:hover {
+  color: #000;
+}
+#brand-sidebar .brand-menu ul li >ul {
+  position: absolute;
+  width: 63%;
+  margin-top: -13%;
+  left: 0;
+}
+#brand-sidebar .brand-menu ul li >ul li {
+  padding: 6% 0;
+  display: inline-block;
+  margin-right: 10%;
+}
+#brand-sidebar .brand-menu ul li >ul li:first-child {
+  margin-right: 13%;
+}

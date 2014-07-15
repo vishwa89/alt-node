@@ -24,11 +24,13 @@ html(ng-app="alt")
         //- link(rel='stylesheet' href='css/vish.css')
     body
         header
-            .visible-xs.visible-sm.hidden-md.hidden-lg
-                include navs/mobile-nav
+          //- .visible-xs.visible-sm.hidden-md.hidden-lg
+          //-     include navs/mobile-nav
         section#main
+          .clearfix
           div(ng-view)
         footer
-            .hidden-xs.hidden-sm.visible-md.visible-lg
-                include navs/bottom-nav
+          .clearfix
+          .hidden-xs.hidden-sm.visible-md.visible-lg
+              include navs/bottom-nav
         include scripts
