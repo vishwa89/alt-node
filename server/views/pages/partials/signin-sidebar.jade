@@ -1,0 +1,50 @@
+#signin-sidebar
+  .login
+    div
+      .col-xs-12.col-sm-12.col-md-6.col-lg-6
+        .title log in
+      .col-xs-12.col-sm-12.col-md-6.col-lg-6
+        .forget forget password
+    div
+      input.email(name='email' type='email' placeholder='EMAIL' required='required')
+      input.password(name='password' type='password' placeholder='PASSWORD' required='required')
+      .col-xs-12.col-sm-12.col-md-6.col-lg-6
+        input.submit(type='submit' value="GO")
+      .col-xs-12.col-sm-12.col-md-6.col-lg-6
+        label
+          input.password(name='remember' type='checkbox')
+          | Remember me
+  .signup
+    div
+      .title join in the community
+      .social-login
+        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+          span sign in with
+        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+          ul.social
+            li
+              a(href='#', title='')
+                img(src='/images/fb.png')
+            li
+              a(href='#', title='')
+                img(src='/images/twitter_2.png')
+      .local-signin
+        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+          input.email(name='fname' type='text' placeholder='FIRST NAME' required='required')
+        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+          input.email(name='lname' type='text' placeholder='LAST NAME' required='required')
+        input.email(name='email' type='email' placeholder='EMAIL' required='required')
+        input.password(name='password' type='password' placeholder='PASSWORD' required='required')
+        input.submit(type='submit' value="GO")
+        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+          label
+            input.password(name='man' type='checkbox')
+            | Man's fashion
+        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+          label
+            input.password(name='woman' type='checkbox')
+            | Woman's fashion
+        label
+            input.password(name='man' type='checkbox')
+            | Receive our newsletter and recommendation?
+        input.submit(type='submit' value="JOIN")

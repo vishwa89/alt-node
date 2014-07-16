@@ -1,84 +1,159 @@
 #brand-sidebar
 	
 	height:100%
-	background: #f6f6f6;
-	padding: 40px;
-	left:0;
-	font-family: PT_Sans;
-	font-weight:bold;
-	color: #000;
-	position:fixed;
-	width:inherit;
+	background: #f6f6f6
+	padding: 40px
+	left: 0
+	font-family: PT_Sans
+	font-weight:bold
+	color: #000
+	position:fixed
+	width:inherit
 	
 	.title 
-		font-size: 30px;
-		margin-top: 20%;
-		text-align:right;
+		font-size: 30px
+		margin-top: 20%
+		text-align:right
 
 	.misc
-		margin: 20px 0;
+		display: block
+		height: 30px
+		margin: 20px 0
 
 		a 
-			margin-right: 10px;
-			font-size: 12px;
-			color: #929292;
-			text-decoration: none;
+			margin-right: 10px
+			font-size: 12px
+			color: #929292
+			text-decoration: none
 			
-
 			&.follow
-				padding: 7px 10px;
-				margin-left:25%;
-				color: #000;
-				border: 1px solid #000;
+				padding: 7px 10px
+				color: #000
+				border: 1px solid #000
 
 	.brand-info
 
-		font-size: 14px;
-		padding: 20px 0;
-		font-weight:lighter;
-		border-bottom: 2px solid #ccc;
-		border-top: 2px solid #ccc;
-		text-align: justify;
+		font-size: 14px
+		padding: 20px 0
+		font-weight: lighter
+		border-bottom: 2px solid #ccc
+		border-top: 2px solid #ccc
+		text-align: justify
 
 
 	.brand-menu
 
-		padding-top: 40px;
+		padding-top: 40px
 		
-
 		ul
-			list-style-type:none;
-			text-align:right;
+			list-style-type: none
+			text-align: right
 
 			li
-
-				padding:8px 0;
+				padding:8px 0
 				
-
 				a
-
-					color: #929292;
-					font-size: 22px;
-					font-weight: normal;
-					padding: 10px 0;
-					text-decoration:none;
+					color: #929292
+					font-size: 22px
+					font-weight: normal
+					padding: 10px 0
+					text-decoration: none
 
 					&:hover
-						color:#000;
-
-
-				>ul 
-					position: absolute;
-					width: 63%;
-					margin-top: -13%;
-					left: 0;
-
-					li
+						color:#000
+			li.active a 
+				color: #000;
+				background: url(../images/icons-100.png) left bottom no-repeat transparent;
+				background-size: 100% 5px;			
 						
-						padding:6% 0;
-						display:inline-block;
-						margin-right:10%
+@media (max-width: 991px)
+	
+	#brand-sidebar
+		position:static
+		padding: 15px	
+		padding-bottom:0				
+		.title 
+			font-size: 30px
+			margin-top: 1%
+			text-align:left
+
+		.misc
+	
+			a.follow
+				padding: 7px 10px
+				margin-left:1%
+				color: #000
+				border: 1px solid #000
 
 
-						&:first-child
-							margin-right:13%;
+		.brand-menu
+
+			padding-top: 10px
+		
+
+			ul
+				
+				text-align:left
+				height:100px
+
+
+				li
+					float:left
+					padding:0
+					padding-left:10px
+					
+				
+
+					a
+
+						padding: 10px 0
+					
+
+					>ul 
+						
+						position: static
+						width: 70px
+						margin-top: 1%
+						left: 0
+						height:auto
+
+						li
+							
+							padding:0
+							display:inline-block
+							margin-right:0
+
+
+							&:first-child
+								margin-right:0
+
+							
+
+
+							
+						
+						
+
+
+
+
+
+
+
+
+
+
+							
+						
+						
+
+
+
+
+
+
+
+
+
+	
+	

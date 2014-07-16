@@ -15,6 +15,8 @@
   text-align: right;
 }
 #brand-sidebar .misc {
+  display: block;
+  height: 30px;
   margin: 20px 0;
 }
 #brand-sidebar .misc a {
@@ -25,7 +27,6 @@
 }
 #brand-sidebar .misc a.follow {
   padding: 7px 10px;
-  margin-left: 25%;
   color: #000;
   border: 1px solid #000;
 }
@@ -57,17 +58,56 @@
 #brand-sidebar .brand-menu ul li a:hover {
   color: #000;
 }
-#brand-sidebar .brand-menu ul li >ul {
-  position: absolute;
-  width: 63%;
-  margin-top: -13%;
-  left: 0;
+#brand-sidebar .brand-menu ul li.active a {
+  color: #000;
+  background: url("../images/icons-100.png") left bottom no-repeat transparent;
+  background-size: 100% 5px;
 }
-#brand-sidebar .brand-menu ul li >ul li {
-  padding: 6% 0;
-  display: inline-block;
-  margin-right: 10%;
-}
-#brand-sidebar .brand-menu ul li >ul li:first-child {
-  margin-right: 13%;
+@media (max-width: 991px) {
+  #brand-sidebar {
+    position: static;
+    padding: 15px;
+    padding-bottom: 0;
+  }
+  #brand-sidebar .title {
+    font-size: 30px;
+    margin-top: 1%;
+    text-align: left;
+  }
+  #brand-sidebar .misc a.follow {
+    padding: 7px 10px;
+    margin-left: 1%;
+    color: #000;
+    border: 1px solid #000;
+  }
+  #brand-sidebar .brand-menu {
+    padding-top: 10px;
+  }
+  #brand-sidebar .brand-menu ul {
+    text-align: left;
+    height: 100px;
+  }
+  #brand-sidebar .brand-menu ul li {
+    float: left;
+    padding: 0;
+    padding-left: 10px;
+  }
+  #brand-sidebar .brand-menu ul li a {
+    padding: 10px 0;
+  }
+  #brand-sidebar .brand-menu ul li >ul {
+    position: static;
+    width: 70px;
+    margin-top: 1%;
+    left: 0;
+    height: auto;
+  }
+  #brand-sidebar .brand-menu ul li >ul li {
+    padding: 0;
+    display: inline-block;
+    margin-right: 0;
+  }
+  #brand-sidebar .brand-menu ul li >ul li:first-child {
+    margin-right: 0;
+  }
 }
