@@ -1,20 +1,19 @@
 #product-sidebar
-  .easyzoom
-    a(href='/images/product4.jpg')
-        img.img-responsive(src='/images/product4.jpg')
-  ul
-    li.col-xs-3.col-sm-3.col-md-3.col-lg-3
-      a(href='/images/product1.jpg')
-        img.img-responsive(src='/images/product1_small.jpg')
-    li.col-xs-3.col-sm-3.col-md-3.col-lg-3
-      a(href='/images/product2.jpg')
-        img.img-responsive(src='/images/product2_small.jpg')
-    li.col-xs-3.col-sm-3.col-md-3.col-lg-3
-      a(href='/images/product3.jpg')
-        img.img-responsive(src='/images/product3_small.jpg')
-    li.col-xs-3.col-sm-3.col-md-3.col-lg-3
-      a(href='/images/product4.jpg')
-        img.img-responsive(src='/images/product4_small.jpg')
+  .zoom
+    img#onzoom(src='/images/product2.jpg', data-zoom-image='/images/product2.jpg')
+    #gallery
+      li.col-xs-3.col-sm-3.col-md-3.col-lg-3
+        a(href='#', data-image='/images/product2.jpg', data-zoom-image='/images/product2.jpg')
+          img#onzoom.img-responsive(ng-src='/images/product2_small.jpg')
+      li.col-xs-3.col-sm-3.col-md-3.col-lg-3
+        a(href='#', data-image='/images/product3.jpg', data-zoom-image='/images/product3.jpg')
+          img#onzoom.img-responsive(ng-src='/images/product3_small.jpg')
+      li.col-xs-3.col-sm-3.col-md-3.col-lg-3
+        a(href='#', data-image='/images/product4.jpg', data-zoom-image='/images/product4.jpg')
+          img#onzoom.img-responsive(ng-src='/images/product4_small.jpg')
+      li.col-xs-3.col-sm-3.col-md-3.col-lg-3
+        a(href='#', data-image='/images/product5.jpg', data-zoom-image='/images/product5.jpg')
+          img#onzoom.img-responsive(ng-src='/images/product5_small.jpg')
   .info
     ul
       li Colour
@@ -40,3 +39,7 @@
           a.contact-info(href='#') Help & Contact
       .clearfix
 
+script.
+  $("#onzoom").elevateZoom(
+    {gallery:'gallery', cursor: 'pointer', galleryActiveClass: 'active'}
+  );

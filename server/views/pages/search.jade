@@ -2,11 +2,11 @@ label
   input(type='text', ng-model='criteria')
 #products(ng-controller="productsCtrl")
   ul
-    li.col-xs-12.col-sm-6.col-md-4.col-lg-3(ng-repeat="product in products | filter:criteria") 
+    li.col-xs-12.col-sm-6.col-md-4.col-lg-3(ng-repeat="product in products | filter:criteria" ng-show="criteria.length >= 1") 
       img.img-responsive(ng-src="/{{product.image}}")
       .row
         .col-xs-12.col-sm-12.col-md-6.col-lg-6
-          {{product.name}}
+        | {{product.name}}
         .col-xs-12.col-sm-12.col-md-6.col-lg-6   
           div {{product.price | currency: "£"}}
       .row

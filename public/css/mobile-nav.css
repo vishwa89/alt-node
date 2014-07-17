@@ -1,0 +1,100 @@
+#mobile-nav {
+  position: fixed;
+  z-index: 230;
+  top: 0;
+  padding-left: 10px;
+  height: 45px;
+  width: 100%;
+  background-color: #000;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#mobile-nav .nav-expander {
+  position: fixed;
+  width: 160px;
+  display: block;
+  height: 40px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+}
+#mobile-nav .nav-expander img {
+  width: 30px;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  z-index: 231;
+}
+#mobile-nav .nav-expander.active {
+  right: 11em;
+  transition: right 0.3s ease-in-out 0s;
+}
+#mobile-nav ul {
+  width: 147px;
+}
+#mobile-nav ul.nav {
+  position: fixed;
+  height: 100%;
+  z-index: 999;
+  background-color: #1b1b1b;
+  right: -250px;
+  transition: right 0.3s ease-in-out 0s;
+}
+#mobile-nav ul.active {
+  right: -0.5px;
+}
+#mobile-nav ul li {
+  border-bottom: 1px solid #3e3e3e;
+  padding: 8px 0px 8px 20px;
+}
+#mobile-nav ul li a {
+  color: #9a9a99;
+  text-decoration: none;
+  line-height: 2;
+  font-size: 18px;
+  padding: 0;
+}
+#mobile-nav ul li a:hover,
+#mobile-nav ul li a:focus {
+  background-color: transparent;
+  color: #fff;
+}
+.subscribe input,
+.subscribe button {
+  font-size: 14px;
+  border: 1px solid #4a4a4a;
+  width: 122px;
+  height: 25px;
+  background: transparent;
+  margin-top: 20px;
+  color: #555;
+  padding: 4px 6px;
+  margin-right: 7px;
+  padding-left: 7px;
+  text-transform: uppercase;
+}
+.subscribe button {
+  background-color: #2e2e2e;
+  margin-top: 7px;
+}
+.social-icons {
+  display: inline-block !important;
+}
+.social-icons a {
+  display: inline-block !important;
+}
+.social-icons a img {
+  width: 21px;
+  margin-top: 10px;
+  margin-right: 7px;
+  opacity: 0.5;
+}
+.social-icons a.follow {
+  display: block !important;
+}

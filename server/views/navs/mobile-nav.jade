@@ -1,26 +1,33 @@
 #mobile-nav
-  ul.nav
-    li.menu-block
-      a(href='#') Sign in
-    li.menu-block
-      a.explore(href='#') Explore
-      a.search-btn(href='#') Search
-      a(href='#') Showroom
-    li.menu-block
-      a.clearfix(href='#') Account
-      a(href='#') 中文
-    li.menu-block
-      | Follow
-      a(href='#')
-        img(src='/images/mobile_twitter.png')
-      a(href='#')
-        img(src='/images/mobile_facebook.png')
-      a(href='#')
-        img(src='/images/mobile_pinterest.png')
-      a(href='#')
-        img(src='/images/mobile_weibo.png')
-      .subsribe
-        input.input(name='email' type='email' placeholder='EMAIL' required='required' aria-required='true')
-        button Subsribe
-    .menu-block
-      a(href='#') Info
+  div.navbar
+    a.pull-left(href='#')
+        img(src='/images/logo.png')
+    a(id="nav-expander" class="nav-expander")
+        img(src='/images/menu_icon.png')
+      
+
+    ul.nav
+      li.menu-block
+        a(href='#') Sign in
+      li.menu-block
+        a.explore.clearfix(href='#') Explore
+        a.search-btn.clearfix(href='#') Search
+        a(href='#') Showroom
+      li.menu-block
+        a.clearfix(href='#') Account
+        a(href='#') 中文
+      li.social-icons.menu-block
+        a.follow(href='#') Follow
+        a.twitter(href='#')
+          img(src='/images/mobile_twitter.png')
+        a.facebook(href='#')
+          img(src='/images/mobile_facebook.png')
+        a.pinterest(href='#')
+          img(src='/images/mobile_pinterest.png')
+        a.weibo(href='#')
+          img(src='/images/mobile_weibo.png')
+        .subscribe
+          input.input(name='email' type='email' placeholder='EMAIL' required='required' aria-required='true')
+          button Subscribe
+      li.menu-block
+        a(href='#') Info
