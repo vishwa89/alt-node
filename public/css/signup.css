@@ -1,11 +1,117 @@
+#signup {
+  bottom: 0;
+  height: 400px;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 290px;
+  z-index: 125;
+  background-color: #fff;
+  opacity: 0.95;
+  position: absolute;
+}
 #signup .title {
-  color: #f00;
+  color: #000;
+  font: 700 25px/1.2 'PT Sans';
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 100%;
+  z-index: 300;
 }
 #signup .divider {
-  position: absolute;
-  z-index: 300;
-  width: 250px;
   height: 12px;
-  top: 50px;
   margin-left: 20px;
+  position: absolute;
+  top: 50px;
+  width: 250px;
+  z-index: 300;
+}
+#signup .divider.with {
+  background-image: url("../images/signup_divider1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#signup .divider.or {
+  background-image: url("../images/signup_divider2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 225px;
+}
+#signup .email {
+  color: #000;
+  font: 700 16px/1.2 'PT Sans';
+  height: 40px;
+  left: 20px;
+  position: absolute;
+  top: 80px;
+  width: 250px;
+  z-index: 300;
+}
+#signup .password {
+  color: #000;
+  font: 700 16px/1.2 'PT Sans';
+  height: 40px;
+  left: 20px;
+  position: absolute;
+  top: 130px;
+  width: 250px;
+  z-index: 300;
+}
+#signup .submit {
+  border: 1px solid #000;
+  color: #000;
+  font: 700 16px/1.2 'PT Sans';
+  height: 30px;
+  left: 20px;
+  position: absolute;
+  top: 180px;
+  width: 250px;
+  z-index: 300;
+}
+#signup .submit:hover {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #757576;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#signup .social {
+  height: 30px;
+  left: 50px;
+  position: absolute;
+  top: 250px;
+  width: 200px;
+  z-index: 300;
+}
+#signup .social img {
+  margin-right: 17px;
+  opacity: 0.6;
+  width: 30px;
+}
+#signup p {
+  color: #878787;
+  font: 300 14px/1.2 'PT Sans';
+  height: 30px;
+  left: 20px;
+  position: absolute;
+  text-align: center;
+  top: 290px;
+  width: 250px;
+  z-index: 300;
+}
+#signup .close {
+  background-image: url("../images/follow_cross.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 40px;
+  left: 125px;
+  position: absolute;
+  top: 330px;
+  width: 40px;
+  z-index: 300;
 }

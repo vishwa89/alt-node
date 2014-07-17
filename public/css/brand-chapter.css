@@ -1,0 +1,32 @@
+#brand-chapter {
+  font-family: PT_Sans;
+}
+#brand-chapter .info {
+  margin: 70px;
+}
+#brand-chapter .info h3 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+  display: inline-block;
+}
+#brand-chapter .info ul {
+  list-style-type: none;
+}
+#brand-chapter .info ul.social {
+  display: inline-block;
+  float: right;
+}
+#brand-chapter .info ul li {
+  float: left;
+  margin-left: 10px;
+}
+#brand-chapter .info ul li a {
+  font-size: 12px;
+  color: #929292;
+  text-decoration: none;
+}
+#brand-chapter .info p {
+  font-size: 18px;
+  font-weight: lighter;
+}

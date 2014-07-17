@@ -43,20 +43,35 @@ angular.module('alt')
 .controller('filterCtrl', function($scope, filterService) { 
     $scope.filterService = filterService;
 })
-.controller('brandChapterCtrl', function($scope, $routeParams) { 
+.controller('brandChapterCtrl', function($scope, $routeParams, $location) { 
     $scope.onchapter = $routeParams.chapter;
 
     $scope.chapters = [
-        { name: 'products', url: '/brand/products-all' },
+        { name: 'products', url: '/brand/chapter/products/all' },
         { name: 'story', url: '/brand/chapter/story' },
         { name: 'mood', url: '/brand/chapter/mood' },
         { name: 'talk', url: '/brand/chapter/talk' },
         { name: 'trip', url: '/brand/chapter/trip' },
         { name: 'moment',url: '/brand/chapter/moment' },
-        { name: 'trace',url: '/brand/trace' }
+        { name: 'trace',url: '/brand/chapter/trace' }
     ]
 
     $scope.navClass = function (page) {
-        return page === this.onchapter ? 'active' : '';
+        var currentRoute = $location.path().split('/');
+        console.log(currentRoute[3]);
+        return page === currentRoute[3] ? 'active' : '';
+    };
+    //http://stackoverflow.com/questions/19943217/ng-class-to-highlight-active-menu-item-based-on-ng-repeat-angularjs
+
+    $scope.navOnShow = function (page) {
+        var currentRoute = $location.path().split('/');
+        console.log(currentRoute[4]);
+        return page === currentRoute[4] ? 'onshow' : '';
+    };
+
+    $scope.navShow = function (page) {
+        var currentRoute = $location.path().split('/');
+        console.log(currentRoute[3]);
+        return page === currentRoute[3] ? true : false;
     };
 });
