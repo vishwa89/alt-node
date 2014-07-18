@@ -1,20 +1,31 @@
 #account-top
   .navs
     .col-xs-12.col-sm-12.col-md-6.col-lg-6
+      a(href='#')
+        img(src='/images/logo.png')
       ul
         li my.
-        li:a(href="#") love
-        li:a.active(href="#") [ cart ]
-        li:a(href="#") order
-        li:a(href="#") profile
-    .col-xs-12.col-sm-12.col-md-6.col-lg-6
+        li
+          a(href="#") love
+        li
+          a.active(href="#") [ cart ]
+        li
+          a(href="#") order
+        li
+          a(href="#") profile
+    .col-xs-12.col-sm-12.col-md-6.col-lg-6.text-right
       div
         button.chat_btn Chat Online
-      div
+      div.chat-text
         | lovely to meet,
         i
           | z wang
+
+  .clearfix   
   .lists
     ul
-      li:a(href="#") lovely products
-      li:a(href="#") followed brand
+      li
+        a(href="#") lovely products
+      li
+        a(href="#") followed brand
+
