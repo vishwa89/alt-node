@@ -1,52 +1,15 @@
-#featured {
+#feature-section {
   max-width: 100%;
   position: absolute;
   width: 100%;
   z-index: 120;
 }
-
-#featured div {
-  color: #FFFFFF;
+#feature-1,
+#feature-2,
+#feature-3 {
+  color: #fff;
   height: 1200px;
   margin: 0 auto;
   padding: 0;
   width: 100%;
-}
-
-#featured ul {
-  list-style-type: none;
-  list-style-image: none;
-  bottom: 100px;
-  left: 0;
-  margin: auto;
-  position: fixed;
-  right: 0;
-  width: 144px;
-}
-
-#featured ul li {
-  color: #FFFFFF;
-  float: left;
-  font: italic 100 12px/46px 'PT Sans';
-  height: 46px;
-
-}
-
-#featured ul li a {
-  display: inline-block;
-  height: 46px;
-  width: 45px;
-  font-size: 0;
-}
-
-#featured ul li a.next {
-  background: url(../images/next.png) no-repeat center;
-}
-
-#featured ul li a.skip {
-  background: url(../images/skip.png) no-repeat center;
-}
-
-.nopadding {
-
 }

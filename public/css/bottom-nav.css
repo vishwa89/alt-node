@@ -1,0 +1,34 @@
+#bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #000;
+}
+#bottom-nav span {
+  display: inline-block;
+  height: 40px;
+}
+#bottom-nav span a {
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 1.38em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background: url("/images/navi_dot.png") -1px 14px no-repeat;
+}
+#bottom-nav span a:hover {
+  color: #fff;
+}
+#bottom-nav span:first-child a,
+#bottom-nav span.language a {
+  background-image: none;
+}
+#bottom-nav span.language {
+  border-left: 1px solid #666;
+}

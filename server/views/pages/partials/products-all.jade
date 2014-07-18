@@ -2,12 +2,18 @@
   ul
     li.col-xs-12.col-sm-6.col-md-4.col-lg-3(ng-repeat="product in products | orderBy: sort |  filter:filterService.activeFilters") 
       img.img-responsive(ng-src="/{{product.image}}")
-      div
+      img.tag(src='/images/tag.png')
+      .tag_info.clearfix
         .col-xs-12.col-sm-12.col-md-6.col-lg-6
-          {{product.name}}
+          | From
+        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+          | {{product.name}}
+        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+          | {{product.designer}}
         .col-xs-12.col-sm-12.col-md-6.col-lg-6   
-          div {{product.price | currency: "£"}}
-      div
-        a(href="#" ng-click="likeEvent(product)") Like
-        span  {{product.likeCount}}
+          | {{product.price | currency: "£"}}
+      button.small_button Add to Cart
+      img.love(src='/images/lovely_icon.png')
+      img.share(src='/images/share_icon.png')
+      img.shadow.img-responsive(src='/images/shadow.png')
 .clearfix

@@ -58,20 +58,17 @@ angular.module('alt')
 
     $scope.navClass = function (page) {
         var currentRoute = $location.path().split('/');
-        console.log(currentRoute[3]);
         return page === currentRoute[3] ? 'active' : '';
     };
     //http://stackoverflow.com/questions/19943217/ng-class-to-highlight-active-menu-item-based-on-ng-repeat-angularjs
 
     $scope.navOnShow = function (page) {
         var currentRoute = $location.path().split('/');
-        console.log(currentRoute[4]);
         return page === currentRoute[4] ? 'onshow' : '';
     };
 
     $scope.navShow = function (page) {
         var currentRoute = $location.path().split('/');
-        console.log(currentRoute[3]);
         return page === currentRoute[3] ? true : false;
     };
 });

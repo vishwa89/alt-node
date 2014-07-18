@@ -1,12 +1,25 @@
 #featured
-  ul.control
-    li
-      a.next next
-    li
-      a.skip skip
-  div
-    img.img-responsive(ng-src="/images/featured/featured-1.jpg")
-  div
-    img.img-responsive(ng-src="/images/featured/featured-2.jpg")
-  div
-    img.img-responsive(ng-src="/images/featured/featured-3.jpg")
+  //- ul.control
+  //-   li
+  //-     a.next next
+  //-   li
+  //-     a.skip skip
+  #parallax
+    //- ul#feature-nav
+    //-     li.next
+    //-       a(href='#feature-2')
+    //-         img(src='images/next.png', alt='')
+    //-     li or
+    //-     li.skip
+    //-       a(href='#main')
+    //-         img(src='images/skip.png', alt='')
+    #feature-1.featured(style="background: url(/images/featured/featured-1.jpg) no-repeat fixed 50% 0 / cover;")
+    #feature-2.featured(style="background: url(/images/featured/featured-3.jpg) no-repeat fixed 50% 0 / cover;")
+    #feature-3.featured(style="background: url(/images/featured/featured-2.jpg) no-repeat fixed 50% 0 / cover;")
+
+script.
+  $(document).ready(function($) {
+    $('#feature-1').parallax("50%", 0.1);
+    $('#feature-2').parallax("50%", 0.1);
+    $('#feature-3').parallax("50%", 0.4);
+  });
