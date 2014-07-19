@@ -1,7 +1,7 @@
 #product-sidebar
   .zoom
     img#onzoom(src='/images/product2.jpg', data-zoom-image='/images/product2.jpg')
-    #gallery
+    ul#gallery
       li.col-xs-3.col-sm-3.col-md-3.col-lg-3
         a(href='#', data-image='/images/product2.jpg', data-zoom-image='/images/product2.jpg')
           img#onzoom.img-responsive(ng-src='/images/product2_small.jpg')
@@ -15,17 +15,19 @@
         a(href='#', data-image='/images/product5.jpg', data-zoom-image='/images/product5.jpg')
           img#onzoom.img-responsive(ng-src='/images/product5_small.jpg')
   .info
-    ul
+    ul.parent
       li Colour
-        ul
-          li:a(href='#') Red
-          li:a(href='#') Crystal
-          li:a(href='#') Lime
-          li:a(href='#') Milk
+        ul.child
+          li Red
+          li Crystal
+          li Lime
+          li Milk
+    .clearfix
+    ul.parent.size
       li Size
-        ul
-          li:a(href='#') M - ø 6.4cm
-          li:a(href='#') L - ø 7cm
+        ul.child
+          li M - ø 6.4cm
+          li L - ø 7cm
       li Quantity
         button －
         input(name='number', type='number', autocomplete='off')

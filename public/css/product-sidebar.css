@@ -1,0 +1,74 @@
+#product-sidebar .info {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#product-sidebar .info .parent {
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+}
+#product-sidebar .info .parent button {
+  border: none;
+  background-color: transparent;
+  background-repeat: none;
+  outline: none;
+}
+#product-sidebar .info .parent button:first-child {
+  margin-left: 10px;
+}
+#product-sidebar .info .parent input {
+  width: 10%;
+  border-radius: 4px;
+}
+#product-sidebar .info .parent .child {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  color: #000;
+  color: #929292;
+}
+#product-sidebar .info .parent .child li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 10px 25px 10px 25px;
+}
+#product-sidebar .info .size {
+  border-bottom: 2px solid #cbcbcb;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+#product-sidebar .info .size .child li {
+  margin-left: 42px;
+}
+#product-sidebar .info .size .child li:nth-child(2) {
+  margin-left: 10px;
+}
+#product-sidebar .info button.addtocart {
+  margin-top: 10px;
+  font-family: "pt-sans", "source sans pro";
+  margin-left: 20px;
+  width: 150px;
+  height: 45px;
+  font-size: 15px;
+  background-color: #969696;
+  color: #fff;
+  text-shadow: 2px 3px 3px #727272;
+  font-weight: 700;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+#product-sidebar .info .smalllink {
+  text-align: right;
+  margin-right: 2px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 100;
+  text-decoration: underline;
+}
+#product-sidebar .info .smalllink a {
+  color: #929292;
+  display: block;
+}

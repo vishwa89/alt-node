@@ -19,22 +19,23 @@
             img(src='/images/twitter_2.png')
         li
           a(href='#') Share...
-    .hidden-xs.hidden-sm.col-md-4.col-lg-4
+    .hidden-xs.hidden-sm.col-md-4.col-lg-4.text-right
       button.chat_btn Chat Online
   .details
-    .col-xs-12.col-sm-12.col-md-6.col-lg-6
+    .col-xs-12.col-sm-12.col-md-8.col-lg-8
       .title 
         | Bubble Bracelet - clear acrylic 
       .price 
         | £12
       .vat
         i VAT & Import duty incl.
-    .col-xs-12.col-sm-12.col-md-6.col-lg-6
+    .col-xs-12.col-sm-12.col-md-4.col-lg-4.text-right
       ul.delivery
         li Product code: 1234556
         li Delivery & Returns: £5 UK. £10 ROW. Free return in UK.
         li
           img(src='/images/QRcode.png')
+    .clearfix
     .tabs
       ul.nav.nav-tabs(ng-controller="productCtrl")
         li.active
@@ -66,7 +67,7 @@
         a.right.carousel-control(href='#productCarousel1', role='button', data-slide='next')
           span.glyphicon.glyphicon-chevron-right
     .clearfix
-    .carousels(ng-controller="productCtrl" style="width:640px; height: 30px; margin: 0 auto")
+    .carousels(ng-controller="productCtrl" style="width:640px; height: 100px; margin: 0 auto")
       #productCarousel2.carousel.slide
         .carousel-inner
           .item.active
@@ -81,4 +82,4 @@
           span.glyphicon.glyphicon-chevron-left
         a.right.carousel-control(href='#productCarousel2', role='button', data-slide='next')
           span.glyphicon.glyphicon-chevron-right
-        .clearfix
+    .clearfix

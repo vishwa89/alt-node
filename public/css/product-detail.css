@@ -1,0 +1,101 @@
+#product-details {
+  background-color: #f6f6f6;
+  padding: 20px 45px 0 45px;
+  color: #929292;
+}
+#product-details a {
+  color: #929292;
+}
+#product-details a:hover {
+  color: #000;
+}
+#product-details .row {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #cbcbcb;
+}
+#product-details .row .brand a {
+  margin-left: 8px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+#product-details .row .social li:first-child {
+  padding: 2px 12px;
+  padding-top: 7px;
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 700;
+  line-height: 14px;
+}
+#product-details .row .chat_btn {
+  text-align: left;
+  font-size: 11px;
+  padding: 2px;
+  padding-left: 10px;
+  width: 115px;
+  height: 25px;
+  border-radius: 2px;
+  background: #d1d1d1 url("/images/speechbubble.png") 92% 3px no-repeat;
+  font-weight: 100;
+  border: 0;
+}
+#product-details .row .chat_btn:hover {
+  color: #fff;
+  background: #3c3c3c url("/images/speechbubble_hover.png") 92% 3px no-repeat;
+  transition: all 0.3s ease-in-out 0s;
+}
+#product-details .details {
+  color: #000;
+}
+#product-details .details .title {
+  font-size: 30px;
+  font-weight: 600;
+}
+#product-details .details .price {
+  font-weight: 300;
+  font-size: 30px;
+}
+#product-details .details .vat {
+  color: #929292;
+}
+#product-details .details .delivery {
+  color: #929292;
+  font-size: 10px;
+  list-style-type: none;
+  margin-top: 10px;
+}
+#product-details .details .delivery li {
+  margin-bottom: 10px;
+}
+#product-details .details .delivery li:last-child {
+  margin-bottom: 0;
+}
+#product-details .tabs ul li:hover a,
+#product-details .tabs ul li.active a {
+  background-color: transparent;
+  border: 0;
+}
+#product-details .tabs ul li a {
+  font-weight: 700;
+  font-size: 16px;
+  border: 0;
+}
+#product-details .tabs ul li a:hover,
+#product-details .tabs ul li a.active {
+  background-color: transparent;
+  border: 0;
+}
+#product-details .tabs .tab-pane {
+  font-family: "source sans pro";
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: none;
+  height: 250px;
+  overflow: scroll;
+  border-bottom: 1px solid #cbcbcb;
+}
+#product-details .carousel-inner .item {
+  width: 100%;
+}
