@@ -1,0 +1,38 @@
+#products li {
+  position: relaltive;
+}
+#products li .product-cover {
+  width: 100%;
+}
+#products li .tag {
+  position: absolute;
+  left: 0;
+  bottom: 15%;
+  width: 90%;
+  margin: 0 auto;
+}
+#products li .tag .tag-trigger {
+  text-align: center;
+}
+#products li .tag .tag_info {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  display: block;
+  font: 700 1em/1.2 'PT Sans';
+  padding: 10px;
+}
+#products li .tag .tag_info .small_button {
+  background-color: #b3b3b3;
+  border-radius: 3px;
+  clear: both;
+  color: #fff;
+  display: block;
+  font-size: 0.75em;
+  line-height: 1.38;
+  margin: 10px 0 0 12px;
+  text-align: center;
+}
+#products .shadow {
+  width: 100%;
+}

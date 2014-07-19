@@ -1,0 +1,53 @@
+#account-top ul {
+  margin-left: 10%;
+  margin-top: 1%;
+}
+#account-top ul li {
+  font-size: 16px;
+  color: #000;
+  padding: 10px;
+  display: inline-block;
+  font-weight: 600;
+}
+#account-top ul li a {
+  color: #929292;
+  font-size: 16px;
+  font-weight: 100;
+}
+#account-top ul li a:hover {
+  text-decoration: none;
+}
+#account-top .navs {
+  background-color: #f6f6f6;
+  height: 85px;
+}
+#account-top .navs .chat-text {
+  color: #929292;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  padding-right: 30px;
+}
+#account-top .navs .chat-text i {
+  color: #000;
+}
+#account-top .navs .chat_btn {
+  margin-top: 10px;
+  margin-right: 30px;
+  text-align: left;
+  font-size: 11px;
+  padding: 2px;
+  padding-left: 10px;
+  width: 115px;
+  height: 25px;
+  border-radius: 2px;
+  background: #d1d1d1 url("/images/speechbubble.png") 92% 5px no-repeat;
+  font-weight: 600;
+  border: 0;
+}
+#account-top .lists ul {
+  margin-left: 5%;
+}
+#account-top .lists ul li a {
+  text-transform: uppercase;
+}
