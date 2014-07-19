@@ -1,6 +1,6 @@
-angular.module('alt', ['ngResource', 'ngRoute']);
+var alt = angular.module('alt', ['ngResource', 'ngRoute', 'wu.masonry']);
 
-angular.module('alt')
+alt
 .config(function($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode(true);
 	$routeProvider

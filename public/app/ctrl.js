@@ -1,4 +1,4 @@
-angular.module('alt')
+alt
 .controller('indexCtrl', function($scope){
 	$scope.site = {
 		name: 'alt',
