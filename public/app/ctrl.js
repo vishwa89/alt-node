@@ -42,6 +42,21 @@ alt
 })
 .controller('filterCtrl', function($scope, filterService) { 
     $scope.filterService = filterService;
+
+    $scope.genders = [{value: "man", text: "Man"}, {value: "woman", text: "Woman"}];
+    $scope.types = [{value: "shoe", text: "Shoes"}, {value: "accessory", text: "Accessories"}, {value: "bag", text: "Bags"}, {value: "jewelly", text: "Jewelly"}, {value: "appeal", text: "Appeal"}, {value: "misc", text: "Other misc"}];
+
+    $scope.selected = $scope.genders[0].value;
+    console.log($scope.selected);
+
+    $scope.select= function(value) {
+       console.log(value);
+       $scope.selected = value; 
+    };
+
+    $scope.itemClass = function(value) {
+        return value === $scope.selected ? 'active' : undefined;
+    };
 })
 .controller('brandChapterCtrl', function($scope, $routeParams, $location) { 
     $scope.onchapter = $routeParams.chapter;

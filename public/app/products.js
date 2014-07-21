@@ -11,4 +11,13 @@ alt
 		activeFilters: {}, 
 		searchText: ''
 	};
+})
+.directive('myRepeatDirective', function() {
+  return function(scope, element, attrs) {
+    if (scope.$last){
+	  trigger.click(function(){
+	    console.log(this);
+	  });
+    }
+  };
 });

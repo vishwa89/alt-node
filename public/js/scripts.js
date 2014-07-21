@@ -1,5 +1,4 @@
 $(function(){
-
   $(".nav-expander").click(function(e) {
       e.preventDefault();
       $(".nav").toggleClass("active");
@@ -32,3 +31,12 @@ $(document).ready(function(){
     marginY: 6,
   });
  });
+
+
+$(function(){
+  var trigger = jQuery('.tag');
+  console.log(trigger);
+  trigger.click(function(){
+    console.log(this);
+  });
+});
