@@ -1,4 +1,4 @@
-#signup
+#signup(style="display: none")
   .title SIGN UP
   .divider.with
   input.email(name='email' type='email' placeholder='EMAIL' required='required')
@@ -15,7 +15,14 @@
     a(href='#')
       img(src='images/signup_pinterest.png')
   p
-    | Already a member? Sign in
+    | Already a member? Sign in 
     a here
     | .
   button.close
+  .shadow
+
+script.
+  $("#signup").fadeIn(1000, 'easeOutExpo');
+  $("#signup .close").click(function(){
+    $("#signup").fadeOut(1000, 'easeOutExpo');
+  });

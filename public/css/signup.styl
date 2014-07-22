@@ -60,6 +60,7 @@
     height 30px
     left 20px
     position absolute
+    background-color white
     top 180px
     width 250px
     z-index 300
@@ -76,12 +77,16 @@
     left 50px
     position absolute
     top 250px
-    width 200px
+    width 230px
     z-index 300
     img
-      margin-right 17px
+      margin-right 24px
       opacity 0.6
       width 30px
+      &:hover
+       transition all 0.8s ease
+       opacity 1
+  
   p
     color #878787
     font 300 14px/1.2 'PT Sans'
@@ -92,6 +97,8 @@
     top 290px
     width 250px
     z-index 300
+    a
+      color black
   .close
     background-image url("../images/follow_cross.png")
     background-position center center
@@ -102,4 +109,15 @@
     top 330px
     width 40px
     z-index 300
+    transition all 0.5s ease
+  .shadow
+    position absolute
+    z-index 300
+    width 280px
+    height 40px
+    top 394px
+    left 5px
+    background-image url("../images/shadow.png")
+    background-position center
+    background-repeat no-repeat 
 

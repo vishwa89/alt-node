@@ -1,12 +1,28 @@
-#feature-section {
+#featured {
   max-width: 100%;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 120;
 }
-#feature-1,
-#feature-2,
-#feature-3 {
+#featured #control {
+  bottom: 100px;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  width: 144px;
+}
+#featured #control li {
+  color: #fff;
+  float: left;
+  font: italic 100 12px/46px 'PT Sans';
+  height: 46px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+#featured #parallax #feature-1,
+#featured #parallax #feature-2,
+#featured #parallax #feature-3 {
   color: #fff;
   height: 1200px;
   margin: 0 auto;
