@@ -19,6 +19,7 @@ $(function(){
 });
 
 $(document).ready(function(){
+  
   $('#goup').goup({
     appear: 10,
     scrolltime: 800,
@@ -32,3 +33,5 @@ $(document).ready(function(){
     marginY: 6,
   });
  });
+
+

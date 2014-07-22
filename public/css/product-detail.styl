@@ -84,6 +84,16 @@
 				&:last-child
 					margin-bottom:0;
 
+		.carousel-title
+			color:#000
+			font-size:15px
+			font-weight:700
+			margin-top:15px
+			text-align:center
+			
+			a
+				text-decoration:underline
+
 
 
     			
@@ -102,17 +112,26 @@
 					font-weight:700
 					font-size:16px
 					border:0
+					background-image:url('/images/navi_arrow.png')
+					background-position:center 50px
+					background-repeat:no-repeat
+					
 
 					&:hover,&.active
-					
-					 
-						background-color:transparent	
+						background-image:url('/images/navi_arrow.png')
+						background-position:center bottom
+						background-repeat:no-repeat
+						box-shadow:none
+						transition:all 0.3s ease-in-out 0s
 						border:0
+						background-color:transparent
+					 
+						
 
 		.tab-pane
 			font-family: "source sans pro";
 			font-size: 16px;
-			
+			color:#808080
 			padding-top: 20px
 			padding-bottom: 20px
 			background: none

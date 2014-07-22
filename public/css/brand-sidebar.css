@@ -48,6 +48,8 @@
 #brand-sidebar .brand-menu ul li {
   padding: 8px 0;
   padding-right: 40px;
+  background: url("/images/icons-100.png") -60px center no-repeat transparent;
+  transition: all 4s ease-in 0s;
 }
 #brand-sidebar .brand-menu ul li.active {
   background: url("/images/icons-100.png") right center no-repeat transparent;
@@ -78,6 +80,19 @@
 }
 #brand-sidebar .brand-menu ul li >ul li:first-child {
   margin-right: 13%;
+}
+#brand-sidebar .brand-menu .product-tab {
+  width: 250px;
+}
+#brand-sidebar .brand-menu .product-tab li {
+  float: left;
+  transition: none;
+}
+#brand-sidebar .brand-menu .product-tab li.all.onshow {
+  background: url("/images/shape.png") center center no-repeat;
+}
+#brand-sidebar .brand-menu .product-tab li.featured.onshow {
+  background: url("/images/shape.png") 72% center no-repeat;
 }
 @media (max-width: 991px) {
   #brand-sidebar {
@@ -111,14 +126,13 @@
     float: left;
     padding: 0;
     padding-left: 10px;
+    background: transparent;
   }
   #brand-sidebar .brand-menu ul li.active {
     background: transparent;
   }
   #brand-sidebar .brand-menu ul li.active a {
-    background: url("/images/icons-100.png") right center no-repeat transparent;
-    background-position: right bottom;
-    background-size: 100%;
+    background: url("/images/icons-100.png") 1px bottom repeat-x transparent;
   }
   #brand-sidebar .brand-menu ul li a {
     padding: 10px 0;
@@ -137,5 +151,20 @@
   }
   #brand-sidebar .brand-menu ul li >ul li:first-child {
     margin-right: 0;
+  }
+  #brand-sidebar .brand-menu .product-tab {
+    width: 250px;
+    margin-top: -50px;
+  }
+  #brand-sidebar .brand-menu .product-tab li {
+    float: left;
+    padding-right: 10px;
+    transition: none;
+  }
+  #brand-sidebar .brand-menu .product-tab li.all.onshow {
+    background: url("/images/shape.png") 36px center no-repeat;
+  }
+  #brand-sidebar .brand-menu .product-tab li.featured.onshow {
+    background-position: 92px center;
   }
 }

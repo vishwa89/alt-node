@@ -21,10 +21,11 @@
         li.visible-xs-inline-block.visible-sm-inline-block.visible-md-block.visible-lg-block(ng-repeat="chapter in chapters" ng-class="navClass('{{chapter.name}}')")
           a(href='{{chapter.url}}' style="text-transform: capitalize") {{chapter.name}}
     .col-xs-12.col-sm-12.col-md-6.col-lg-6.col-md-6.col-lg-6.col-md-pull-6.col-lg-pull-6.text-right
-      ul(ng-show="navShow('products')")
-        li.visible-xs-block.visible-sm-block.visible-md-block.visible-lg-inline-block(ng-class="navOnShow('all')")
-          a(href='/brand/chapter/products/all') All
-        li.visible-xs-block.visible-sm-block.visible-md-block.visible-lg-inline-block(ng-class="navOnShow('featured')")
+      ul.product-tab(ng-show="navShow('products')")
+        li.visible-xs-block.visible-sm-block.visible-md-block.visible-lg-inline-block.featured(ng-class="navOnShow('featured')")
           a(href='/brand/chapter/products/featured') Featured
+        li.visible-xs-block.visible-sm-block.visible-md-block.visible-lg-inline-block.all(ng-class="navOnShow('all')")
+          a(href='/brand/chapter/products/all') All
+          
     .clearfix
     

@@ -71,6 +71,16 @@
 #product-details .details .delivery li:last-child {
   margin-bottom: 0;
 }
+#product-details .details .carousel-title {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 15px;
+  text-align: center;
+}
+#product-details .details .carousel-title a {
+  text-decoration: underline;
+}
 #product-details .tabs ul li:hover a,
 #product-details .tabs ul li.active a {
   background-color: transparent;
@@ -80,15 +90,24 @@
   font-weight: 700;
   font-size: 16px;
   border: 0;
+  background-image: url("/images/navi_arrow.png");
+  background-position: center 50px;
+  background-repeat: no-repeat;
 }
 #product-details .tabs ul li a:hover,
 #product-details .tabs ul li a.active {
-  background-color: transparent;
+  background-image: url("/images/navi_arrow.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  transition: all 0.3s ease-in-out 0s;
   border: 0;
+  background-color: transparent;
 }
 #product-details .tabs .tab-pane {
   font-family: "source sans pro";
   font-size: 16px;
+  color: #808080;
   padding-top: 20px;
   padding-bottom: 20px;
   background: none;

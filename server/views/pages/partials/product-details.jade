@@ -51,6 +51,8 @@
         #tab-notes.tab-pane {{product.notes}}
         #tab-advice.tab-pane {{product.advice}}
         #tab-size.tab-pane {{product.size}}
+    .carousel-title More from 
+      a(href='#') byAMT
     .carousels(ng-controller="productCtrl" style="width:640px; height: 100px; margin: 0 auto")
       #productCarousel1.carousel.slide
         .carousel-inner
@@ -67,6 +69,7 @@
         a.right.carousel-control(href='#productCarousel1', role='button', data-slide='next')
           span.glyphicon.glyphicon-chevron-right
     .clearfix
+    .carousel-title You may also like 
     .carousels(ng-controller="productCtrl" style="width:640px; height: 100px; margin: 0 auto")
       #productCarousel2.carousel.slide
         .carousel-inner
