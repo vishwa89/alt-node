@@ -1,0 +1,68 @@
+#follow {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255,255,255,0.85);
+  z-index: 10000;
+  top: 0;
+  left: 0;
+}
+#follow .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#follow .wrapper {
+  padding-top: 50px;
+  height: 700px;
+  width: 60%;
+  margin: auto;
+  font-family: 'PT Sans';
+  font-size: 24px;
+  color: #000;
+}
+#follow .wrapper input[type="email"] {
+  border: none;
+  box-shadow: none;
+  padding-left: 20px;
+  background-image: url("../images/follow_input.png");
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: 'PT Sans';
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+#follow .wrapper input[type="email"]:focus,
+#follow .wrapper input[type="email"]:invalid {
+  color: #000;
+  border: none;
+  box-shadow: none;
+}
+#follow .wrapper .subscribe {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 20px;
+}
+#follow .wrapper .title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#follow .wrapper .social_icon {
+  opacity: 0.5;
+  margin: 0 auto;
+  width: 55%;
+  min-width: 100px;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+#follow .wrapper .social_icon#weixin {
+  opacity: 1;
+}
+#follow .wrapper .social_icon:hover {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}

@@ -1,12 +1,12 @@
 #products(ng-controller="productsCtrl")
   ul(masonry)
-    li.masonry-brick.col-xs-12.col-sm-6.col-md-4.col-lg-3(ng-repeat="product in products | orderBy: sort |  filter:filterService.activeFilters") 
+    li.masonry-brick.col-xs-12.col-sm-6.col-md-4.col-lg-3(ng-repeat="product in products | orderBy: sort |  filter:filterService.activeFilters" my-repeat-directive) 
       img.product-cover.img-responsive(ng-src="/{{product.image}}")
       .tag
         .col-xs-3.col-sm-3.col-md-3.col-lg-3
           .tag-trigger
             img(src='/images/tag.png')
-        .tag_info.col-xs-9.col-sm-9.col-md-9.col-lg-9
+        .tag_info.col-xs-9.col-sm-9.col-md-9.col-lg-9(style="display: none")
           .col-xs-12.col-sm-12.col-md-9.col-lg-9
             | {{product.name}}
           .col-xs-12.col-sm-12.col-md-3.col-lg-3.text-right   
@@ -18,5 +18,23 @@
           .col-xs-12.col-sm-12.col-md-6.col-lg-6.text-right
             img.love(src='/images/lovely_icon.png')
             img.share(src='/images/share_icon.png')
-        img.shadow.img-responsive(src='/images/shadow.png')
+    li.masonry-brick.col-xs-12.col-sm-6.col-md-4.col-lg-3(ng-repeat="product in products | orderBy: sort |  filter:filterService.activeFilters" my-repeat-directive) 
+      img.product-cover.img-responsive(ng-src="/{{product.image}}")
+      .tag
+        .col-xs-3.col-sm-3.col-md-3.col-lg-3
+          .tag-trigger
+            img(src='/images/tag.png')
+        .tag_info.col-xs-9.col-sm-9.col-md-9.col-lg-9(style="display: none")
+          .col-xs-12.col-sm-12.col-md-9.col-lg-9
+            | {{product.name}}
+          .col-xs-12.col-sm-12.col-md-3.col-lg-3.text-right   
+            | {{product.price | currency: "£"}}
+          .col-xs-12.col-sm-12.col-md-12.col-lg-12
+            | From {{product.designer}}
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            button.small_button Add to Cart
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6.text-right
+            img.love(src='/images/lovely_icon.png')
+            img.share(src='/images/share_icon.png')
+        //- img.shadow.img-responsive(src='/images/shadow.png')
 .clearfix
